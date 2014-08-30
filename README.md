@@ -34,6 +34,7 @@ Błędy
 1.Brak danych
 -----------------------
 ![](/README/brakdanych.jpg)
+
 Jeśli którekolwiek z pól pozostanie puste.
 
 2. Złe przybliżenie
