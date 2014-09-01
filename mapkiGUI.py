@@ -115,6 +115,9 @@ class Application(tk.Frame):
 		self.howManyX=self.endX-self.startX
 		self.howManyY=self.endY-self.startY
 
+		if self.howManyY*256>50000 or self.howManyX*256>50000:
+			tkMessageBox.showerror('Za duzy obrszar!', 'Nie możliwy jest zapis obrazka o krawędzi wiekszej niz 50 000px!')
+
 		self.pB['maximum']=(self.howManyY*self.howManyX)-1
 		
 		self.newImg=Image.new('RGB',(self.howManyX*256,self.howManyY*256),)
